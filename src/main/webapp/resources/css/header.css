@@ -1,0 +1,199 @@
+/* ---------- 헤더 ---------- */
+.main-banner {
+    position: relative;
+    margin-left: 230px;
+    padding: 40px 60px;
+    background: #004680;
+    color: #fff;
+}
+.main-banner img {
+    display: block;
+    width: 200px;
+}
+.main-banner h1 {
+    display: inline-block;
+    width: 300px;
+    vertical-align: bottom;
+}
+.main-banner .header-search {
+	display: inline-block;
+	position: relative;
+    width: 700px;
+    height: 44px;
+    background: #fff;
+}
+.main-banner .header-search input {
+    width: 700px;
+    line-height: 40px;
+    font-size: 18px;
+    text-indent: 10px;
+    border: 1px solid #fff;
+}
+.main-banner .header-search button {
+    position: absolute;
+    top: 5px; right: 0;
+    display: inline-block;
+    padding: 0;
+    background: #fff;
+    border: none;
+}
+.main-banner .header-search img {
+    display: inline-block;
+    width: 35px; height: 35px;
+    vertical-align: middle;
+    background: #fff;
+}
+
+header {
+    position: absolute;
+    top: 0; left: 0;
+    width: 230px; min-height: 100%;
+    padding: 30px 0;
+    border-right: 1px solid #999;
+    line-height: 30px;
+}
+.header-user-info {
+    width: 165px;
+    margin: 0 auto 30px;
+    padding: 10px 10px 20px;
+    border-top : 1px solid #999;
+    border-bottom : 1px solid #999;
+}
+.header-user-info .user-name {
+	padding: 10px 0;
+	font-size: 14px;
+}
+.header-user-info .user-name span {
+	font-size: 20px;
+    color: #004680;
+}
+.header-user-info .user-img {
+    font-size: 12px;
+}
+.header-user-info .user-img img {
+    display: inline-block;
+    width: 40px; height: 40px;
+    vertical-align: middle;
+}
+.header-user-info .user-img .my-info-modify {
+/*     width: 14px; height: 14px; */
+/*     border: 1px solid #ccc; */
+/*     border-radius: 50%; */
+/*     background: #ccc; */
+/*     vertical-align: middle; */
+/*     font-size: 10px; */
+/*     color: #fff; */
+/*     text-indent: -3px; */
+/*     cursor: pointer; */
+}
+.header-user-info ul {
+    margin-bottom: 15px;
+}
+.header-user-info ul li {
+    line-height: 18px;
+    font-size: 12px;
+}
+.header-user-info ul li span {
+    font-weight: bold;
+}
+
+.header-user-info .user-inputbox {
+    padding: 10px 0;
+}
+.header-user-info .user-inputbox a {
+    background: #004680;
+    line-height: 36px;
+    color: #fff;
+    border: 1px solid #004680;
+}
+.header-user-info .user-inputbox a:hover {
+	color: #fff !important;
+}
+/* .header-user-info .user-inputbox .user-remember { */
+/*     position: absolute; */
+/*     top: 8px; right: 0px; */
+/*     font-size: 10px; */
+/* }  */
+/* .header-user-info .user-inputbox button { */
+/*     float: right; */
+/*     width: 57px; */
+/*     height: 27px; */
+/*     background: #004680; */
+/*     border: 1px solid #004680; */
+/*     font-size: 13px; */
+/*     color: #fff; */
+/* } */
+.header-user-info .user-login {
+    font-size: 12px;
+    line-height: 18px;
+}
+.header-user-info .user-login a:first-child {
+    float: right;
+}
+
+.header-con .list-wrap > li > p {
+    padding-left: 20px;
+    border-top: 1px solid #999;
+    line-height: 50px;
+}
+.header-con .list-wrap > li ul {
+    padding: 10px 0;
+    border-top: 1px solid #999;
+}
+.header-con .list-wrap > li li {
+    padding: 0 40px;
+    font-size: 14px;
+}
+.header-con a:hover {
+    color: #004680;
+}
+
+/* ---------- 회원등급 ---------- */
+.my-info-wrap {
+    display: none;
+    position: fixed;
+    top: 0; left: 0;
+    z-index: 10;
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+}
+.my-info-wrap.open {
+    display: block;
+}
+.my-info {
+    position: fixed;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    margin: 0 auto 0;
+    background: #fff;
+    padding: 80px;
+    text-align: center;
+}
+.my-info .my-info-title {
+	font-size: 20px;
+}
+.my-info .my-info-title span {
+	font-size: 22px;
+	color: #004680;
+}
+.my-info .my-info-title .my-info-close {
+    float: right;
+    border: none;
+    background: #fff;
+    cursor: pointer;
+}
+.my-info .my-info-list {
+    margin: 50px 0;
+    text-align: left;
+}
+.my-info .my-info-list > li {
+    overflow: hidden;
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 18px;
+}
+.my-info .my-info-list > li > span {
+    display: inline-block;
+    width: 100px;
+}

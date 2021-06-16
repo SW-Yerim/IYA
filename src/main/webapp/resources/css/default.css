@@ -1,0 +1,952 @@
+/* -------------------------- */
+/* ---------- 공통 ---------- */
+/* -------------------------- */
+a:hover {
+    color: #004680 !important;
+}
+.center {
+    text-align: center;
+}
+.xsmall {
+    width: 70px;
+}
+.small {
+    width: 100px;
+}
+.medium {
+    width: 145px;
+}
+.large {
+    width: 200px;
+}
+.full {
+    width: 100%;
+}
+
+/* ---------- 셀렉트 박스 ---------- */
+select {
+    display: inline-block;
+    height: 26px;
+    border: 1px solid #999;
+    background: #fff;
+    font-size: 12px;
+    line-height: 22px;
+    vertical-align: middle;
+    text-indent: 5px;
+}
+
+/* ---------- 인풋 박스 ---------- */
+input {
+    display: inline-block;
+    border: 1px solid #999;
+    background: #fff;
+    font-size: 12px;
+    line-height: 22px;
+    vertical-align: middle;
+    text-indent: 5px;
+}
+
+/* ---------- 인풋 체크박스 ---------- */
+input[type="checkbox"] {
+    display: none;
+}
+input[type="checkbox"] + label::before {
+    content: ' ';
+    display: inline-block;
+    width: 12px; height: 12px;
+    margin: -2px 8px 0 0;
+    border: 1px solid #999;
+    line-height: 12px;
+    text-align: center;
+    vertical-align: middle;
+}
+input[type="checkbox"]:checked + label {
+    color: #004480;
+}
+input[type="checkbox"]:checked + label:before {
+    content: '\2713';
+    border-color: #004680;
+    background: #004680;
+    font-size: 10px;
+    color: #fff;
+}
+
+/* ---------- 버튼 ---------- */
+.btn {
+    display: inline-block;
+    border: 1px solid #999;
+    background: #fff;
+    font-size: 12px;
+    color: #666;
+    line-height: 26px;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+}
+.btn:hover {
+    border: 1px solid #004680;
+    color: #004680;
+}
+input.btn {
+    line-height: 24px;
+}
+.btn.red {
+    border: 1px solid red;
+    color: red;
+}
+.btn.blue {
+    border: 1px solid blue;
+    color: blue;
+}
+
+/* ---------- 컨텐츠 ---------- */
+.content-wrap {
+    width: 1050px;
+    margin-top: 50px;
+    margin-left: 230px;
+    padding: 50px;
+    padding-top: 0;
+    border-left: 1px solid #999;
+    overflow: hidden;
+    font-size: 14px;
+}
+.content-title {
+    margin-bottom: 40px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #999;
+    font-size: 20px;
+}
+
+
+
+/* ---------------------------- */
+/* ---------- 페이지 ---------- */
+/* ---------------------------- */
+/* ---------- 메인 ---------- */
+.main-wrap {
+    position: relative;
+    width: 850px;
+    margin-left: 230px;
+    padding: 50px 0 50px 50px;
+    overflow: hidden;
+    border-left: 1px solid #999;
+}
+.main-wrap .main-content {
+    width: 49%;
+    height: 205px;
+    float: left;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+}
+.main-wrap .main-content:nth-child(2n) {
+    float: right;
+}
+.main-wrap .main-content:nth-child(4) img {
+    width: 92%;
+    height: 172px;
+    padding: 21px 0 0 33px;
+}
+.main-wrap .main-content .title {
+    padding: 15px 20px;
+    border-bottom: 1px solid #999;
+    font-size: 18px;
+    color: #000;
+}
+.main-wrap .main-content .title p {
+    vertical-align: middle;
+    font-size: 16px;
+}
+.main-wrap .main-content .title span { 
+    display: inline-block;
+    margin-top: 2px;
+    vertical-align: top;
+    font-size: 10px;
+}
+.main-wrap .main-content ul {
+    margin-top: 10px;
+}
+.main-wrap .main-content li {
+    position: relative;
+    border-bottom: 1px solid #ccc;
+    line-height: 24px;
+    vertical-align: middle;
+    font-size: 14px;
+    text-indent: 8px;
+}
+.main-wrap .main-content li::before {
+    display: inline-block;
+    content: '·'; 
+    position: absolute;
+    top: 0; left: 0;
+    font-weight: bold;
+}
+.main-wrap .main-content li.none::before{
+	display: none;
+}
+.main-wrap .main-content li span:nth-child(1) {
+    display: inline-block;
+    max-width: 380px; 
+    padding-right: 5px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.main-wrap .main-content.day li span:nth-child(1),
+.main-wrap .main-content.week li span:nth-child(1),
+.main-wrap .main-content.month li span:nth-child(1) {
+    max-width: 470px;
+}
+.main-wrap .main-content li span:nth-child(2) {
+    vertical-align: middle;
+    font-size: 12px;
+    color: #004680;
+} 
+.main-wrap .main-content a:hover {
+    color: #004680;
+    font-weight: bold;
+}
+
+.main-wrap .main-content.adv {
+    position: absolute;
+    top: 344px; right: 0;
+    width: 320px;
+    height: 200px;
+    float: right;
+}
+.main-wrap .main-content.adv img {
+    display: block;
+    width: 320px;
+}
+
+.main-wrap .main-content.best-member {
+    position: absolute;
+    top: 547px; right: 0;
+    width: 320px;
+    float: right;
+    vertical-align: middle;
+}
+.main-wrap .main-content.best-member img {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+}
+.main-wrap .main-content.best-member li::before {
+    display: none;
+}
+.main-wrap .main-content.best-member li span {
+    font-size: 12px;
+}
+.main-wrap .main-content.best-member li span:nth-child(1) {
+    padding: 0;
+    text-indent: 5px;
+}
+.main-wrap .main-content.best-member li span:nth-child(3) {
+    color: #004680;
+}
+.main-wrap .main-content.best-member li span:last-child {
+    display: block;
+    margin: -10px 0 0 57px;
+}
+
+/* ---------- 페이지 ---------- */
+
+/* ---------- 상세페이지 ---------- */
+/* 타이틀 */
+.board-address {
+	border-top: 1px solid #999;
+	background: #f8f8f8;
+	padding: 15px;  
+	font-size: 12px;
+}
+.share {
+	display: inline-block;
+	float:right;
+}
+.board-detail-title {
+	border-top: 1px solid #999;
+	border-bottom: 1px solid #ccc;
+	padding: 15px 10px 15px 10px;
+}
+.board-detail-title {
+}
+.board-detail-title ul {
+	overflow: hidden; 
+	font-size: 13px;
+}
+.board-detail-title li:nth-child(1) {
+	display: inline-block;
+	float: left;
+	padding-right :10px;
+	margin-right: 10px;
+	border-right : 1px solid #ccc;
+	
+}
+.board-detail-title li:nth-child(2) {
+	float: left;
+
+}
+.board-detail-title li:nth-child(3) {
+	display: inline-block;
+	float:right;
+	margin-left : 10px;
+	border-left : 1px solid #ccc;
+	padding-left:10px;
+}
+.board-detail-title li:nth-child(4) {
+	display: inline-block;
+	float:right;
+	
+}
+.board-detail-title p {
+	width: 80%;
+	font-weight:bold;
+	display: inline-block;
+	margin-bottom: 15px;
+	font-size: 14px;
+	color: #333;
+}
+
+/* 본몬 */
+.board-detail-main{
+	padding-top: 30px;
+}
+.board-detail-main p{
+	display: block;
+    margin: 30px auto;
+	width: 90%;
+}
+.board-detail-main img{
+	display: block;
+    margin: 30px auto;
+}
+/* 버튼(추천, 비추천) */
+.board-detail-button {
+	margin: 80px 0 0 0;
+	text-align: center;
+}
+.board-detail-button a {
+	display: inline-block;
+    border: 1px solid #999;
+	margin: 0 10px;
+	width: 100px; height: 60px;
+	line-height: 60px;
+	font-size: 12px;
+	cursor: pointer;
+}
+.board-detail-button a:hover {
+	font-weight: bold;
+}
+.board-detail-button button {
+	display: inline-block;
+    border: 1px solid #999;
+	margin: 0 10px;
+	width: 100px; height: 63px;
+	background: #fff;
+	line-height: 63px;
+	font-size: 12px;
+	cursor: pointer;
+}
+.board-detail-button button:hover {
+	font-weight: bold;
+}
+.board-detail-button .good {
+	border: 1px solid #004680;
+	color: #004680 !important;
+}
+.board-detail-button .bad {
+	border: 1px solid red;
+	color: red !important;
+}
+.board-detail-button img{
+	display: inline-block;
+    width: 25px; height: 25px; 
+}
+.board-detail-comment img{
+	display: inline-block;
+    width: 15px; height: 15px; 
+}
+.detail-title {
+	padding: 30px 0;
+}
+
+/* 댓글 */
+.comment-detail {
+	border-top: 1px solid #999;
+    margin-top: 20px;
+	padding: 10px 0 10px;
+}
+.comment-button{
+	display: inline-block;
+	float: right;
+}
+.comment-button button{
+	font-size : 12px;
+    background: #fff;
+    border: 1px solid #999;
+	width: 50px;
+	cursor: pointer;
+}
+.comment-button .agree{
+	color: red;
+}
+.comment-button .disagree{
+	color: blue;
+}
+.comment-text{
+	padding: 20px 10px 25px 10px;
+}
+.comment-answer-button {
+	float: right;
+	margin-top: -30px;
+	background: #fff;
+	font-size: 12px;
+	cursor: pointer;
+}
+.comment-answer-button:hover {
+	color: #004680;
+	font-weight: bold;
+}
+.comment-answer {
+	background:#f8f8f8;
+	margin: 0 0 10px 100px;
+	border: 1px solid #999;
+	padding:10px ;
+}
+.comment-add {
+ text-align:center;
+	border-top: 1px solid #001;
+	border-bottom: 1px solid #001;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding: 20px 10px 10px;
+}
+.comment-add textarea {
+    width: 800px;
+    height: 88px;
+    vertical-align: middle;
+    padding: 10px 20px;
+    border: 1px solid #666;
+}
+.comment-add button {
+    width: 110px;
+    height: 110px;
+    vertical-align: middle;
+    border: 1px solid #666;
+    background: #fff;
+}
+.comment-add button:hover {
+	border: 1px solid #004680;
+	color: #004680;
+	cursor: pointer;
+}
+.commend-answer-arrow {
+    margin-top: 10px;
+    margin-left: 40px;
+	display: inline-block;
+    width: 20px;
+    height: 20px;
+    float:left;
+}
+.reply-add {
+	display: none;
+    margin-left: 100px;
+    margin-bottom: 20px;
+}
+.reply-add.active {
+	display: block;
+}
+.reply-add textarea {
+    width: 833px;
+    height: 48px;
+    vertical-align: middle;
+    padding: 10px 20px;
+    border: 1px solid #666;
+}
+.reply-add button {
+	width: 70px;
+    height: 70px;
+    vertical-align: middle;
+    border: 1px solid #666;
+    background: #fff;
+}
+.reply-add button:hover {
+	border: 1px solid #004680;
+	color: #004680;
+	cursor: pointer;
+}
+
+/* 게시판 */
+.board-wrap {
+	width: 850px;
+ 	margin-left: 280px; 
+	padding-left: 20px;
+}
+.content-wrap .board-tab-menu {
+	margin-top: 30px;
+	margin-bottom: 50px;
+}
+.content-wrap .board-tab-menu ul {
+    overflow: hidden;
+}
+.content-wrap .board-tab-menu li {
+	display: inline-block;
+    padding: 0 10px;
+    border-left: 1px solid #000;
+	cursor: pointer;
+}
+.content-wrap .board-tab-menu li.active {
+	font-weight: bold;
+	color: #004680;
+}
+.content-wrap .board-tab-menu a {
+     padding: 0 10px; 
+}
+.content-wrap .board-tab-menu li:first-child {
+	border-left: 1px solid #fff;
+	padding : 0 10px 0 0;
+}
+.content-wrap .board-tab-menu li:first-child a {
+	padding : 0 10px 0 0;
+}
+
+.board-list .board-title {
+	margin-bottom: 20px;
+	line-height: 28px;
+}
+.board-list .board-title a {
+	float: right;
+ 	padding: 5px 30px; 
+	border: 1px solid #000;
+	line-height: 1;
+}
+.board-list  table {
+	width: 100%;
+	text-align: center;
+}
+.board-list  table tr {
+
+}
+.board-list  table th{
+	border-top: 2px solid #000;
+	border-bottom: 2px solid #000;
+}
+.board-list  table th:nth-child(1){
+	padding: 20px 0 20px 0;
+	width: 5%;
+} 
+.board-list  table th:nth-child(2){
+	width: 39%;
+} 
+.board-list  table th:nth-child(3){
+	width: 15%;
+} 
+.board-list  table th:nth-child(4){
+	width: 10%;
+} 
+.board-list  table th:nth-child(5){
+	width: 5%;
+} 
+.board-list  table th:nth-child(6){
+	width: 5%;
+}
+.board-list  table td {
+	border-bottom: 1px solid #001;
+	padding: 10px 0 10px 0;
+	font-size: 12px;
+	padding: 15px 0 15px 0;
+} 
+.board-list  table td:nth-child(2){
+	text-align: left;
+}
+.board-list .page-wrap {
+	display: block;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 16px;
+}
+.board-list .page-wrap a.active {
+	color: #004680;
+	font-weight: bold;
+}
+.board-list .board-search {
+	display: inline-block;
+	float: right;
+	margin-top: 10px;
+}
+.board-search input {
+    margin-left: 3px;
+    border: 1px solid #999;
+}
+.board-search img {
+    display: inline-block;
+    width: 24px; height: 24px; 
+    vertical-align: middle;
+    border: 1px solid #999;
+    border-left: none;
+}
+
+/*  검색 */
+.board-search input {
+/*     width: 165px; height: 25px; */
+    margin-left: 3px;
+    border: 1px solid #999;
+    margin-right: -5px;
+}
+.board-search select {
+/*   	width: 100px; height: 25px; */
+}
+.board-search button {
+    padding: 0;
+    background: none;
+    border: none;
+}
+.board-search img {
+    display: inline-block;
+    width: 24px; height: 24px; 
+    vertical-align: middle;
+    border: 1px solid #999;
+    border-left: none;
+}
+
+
+/* ---------- 로그인 ---------- */
+.login-form {
+    position: relative;
+    width: 360px;
+    margin: 100px auto 70px;
+}
+.login-form p {
+    margin-bottom: 10px;
+}
+.login-form p span {
+    display: inline-block;
+    width: 100px;
+}
+.login-form .login-btn {
+    position: absolute;
+    top: 0;
+    left: 260px;
+}
+.login-form .login-btn input {
+    line-height: 58px;
+    cursor: pointer;
+}
+.login-form .login-btn input:hover {
+    border: 1px solid #004680;
+    color: #004680;
+}
+.login-form .id-remember {
+    margin-left: 260px;
+    font-size: 12px;
+    color: #666;
+}
+.login-form p:last-child {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #999;
+    font-size: 12px;
+    text-align: center;
+}
+.login-form p:last-child a {
+    color: #666;
+}
+.login-form p:last-child a:hover {
+    text-decoration: underline;
+}
+
+
+/* ---------- 회원가입 공통 ---------- */
+.join_img {
+    width: 510px;
+    margin: 50px auto;
+    overflow: hidden;
+}
+.join_img li {
+    width: 100px; height: 100px;
+    float: left;
+    border: 1px solid #999;
+    border-radius: 50%;
+    text-align: center;
+    margin-right: 100px;
+}
+.join_img li:last-child {
+    margin-right: 0;
+}
+.join_img li p {
+    color: #999;
+}
+.join_img li p:first-child {
+    position: relative;
+    margin-top: 25px;
+    padding-bottom: 20px;
+}
+.join_img li p:first-child::after {
+    content: "";
+    position: absolute;
+    top: 22px; left: 35px;
+    display: block;
+    width: 30px; height: 1px;
+    background: #999;
+}
+.join_img li.active {
+    border: 1px solid #004680;
+}
+.join_img li.active p {
+    color: #004680;
+}
+.join_img li.active p:first-child::after {
+    background: #004680;
+}
+
+
+/* ---------- 회원가입1 ---------- */
+.join_agree_con > div {
+    margin-bottom: 30px;
+}
+.join_agree_con .agree_con_tit label {
+    margin-left: 20px;
+    font-size: 12px;
+}
+.join_agree_con p {
+    height: 200px;
+    overflow-y: scroll;
+    margin-top: 10px;
+    padding: 20px 30px;
+    border: 1px solid #999;
+}
+
+/* ---------- 회원가입2 ---------- */
+.join_input_con {
+    width: 450px;
+    margin: 50px auto 30px;
+    padding: 50px 30px;
+    border-top: 1px solid #004680;
+    border-bottom: 1px solid #004680;
+}
+.join_input_con p {
+    margin-bottom: 10px;
+}
+.join_input_con p:last-of-type {
+    margin-bottom: 0;
+}
+.join_input_con p span {
+    display: inline-block;
+    width: 100px;
+}
+
+/* ---------- 회원가입3 ---------- */
+.join_fin p {
+    width: 450px;
+    margin: 50px auto 30px;
+    padding: 50px 30px;
+    border-top: 1px solid #004680;
+    border-bottom: 1px solid #004680;
+    font-size: 20px;
+    color: #004680;
+    text-align: center;
+}
+
+
+/* ---------- 아이디 비밀번호 찾기 ---------- */
+.find-form {
+    width: 450px;
+    margin: 100px auto 70px;
+}
+.find-form p {
+    margin-bottom: 10px;
+}
+.find-form p:last-child {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #999;
+    font-size: 12px;
+    text-align: center;
+}
+.find-form .find-btn {
+    margin: 30px 0;
+    text-align: center;
+}
+.find-form .find-btn input {
+    line-height: 34px;
+}
+.find-form p span {
+    display: inline-block;
+    width: 100px;
+}
+
+/* ---------- 아이디 찾기 결과 ---------- */
+.find-id-form {
+    width: 450px;
+    margin: 100px auto 70px;
+    text-align: center;
+}
+.find-id-form p {
+    font-size: 20px;
+}
+.find-id-form p:last-child {
+    margin-top: 40px;
+    padding-top: 15px;
+    border-top: 1px solid #999;
+    font-size: 12px;
+    text-align: center;
+}
+.find-id-form p span {
+    color: #004680;
+    font-weight: bold;
+}
+
+/* ---------- 비밀번호 찾기 결과 ---------- */
+.find-pwd-form { 
+    width: 450px;
+    margin: 100px auto 70px;
+    text-align: center;
+}
+.find-pwd-form .find-pwd-btn {
+    margin: 30px 0;
+    text-align: center;
+}
+.find-pwd-form .find-pwd-btn input {
+    line-height: 34px;
+}
+.find-pwd-form p span {
+    display: inline-block;
+    width: 100px;
+}
+
+
+/* ---------- 이용약관 ---------- */
+.terms p {
+    height: 500px;
+    overflow-y: scroll;
+    padding: 50px;
+    border: 1px solid #999;
+    line-height: 20px;
+}
+
+
+/* ---------- 개인정보취급방침 ---------- */
+.statement p {
+    height: 500px;
+    overflow-y: scroll;
+    padding: 50px;
+    border: 1px solid #999;
+    line-height: 20px;
+}
+
+
+/* ---------- 화제의 회원 ---------- */
+.content-title .member-rank-chk {
+    float: right;
+    margin-top: 5px;
+    font-size: 14px;
+    vertical-align: baseline;
+    cursor: pointer;
+}
+.member-form .member-title {
+    margin-top: 40px;
+}
+.member-form ul {
+    padding: 10px;
+}
+.member-form li {
+    border-bottom: 1px solid #ccc;
+    text-indent: 5px;
+}
+.member-form li > img {
+    display: inline-block;
+    width: 40px; height: 40px;
+    vertical-align: middle;
+}
+.member-form li > p {
+    display: inline-block;
+    vertical-align: middle;
+}
+.member-form li > p:first-child {
+    width: 25px;
+}
+.member-form li .member-name {
+    width: 150px;
+}
+
+
+/* ---------- 검색 ---------- */
+.content-title.search {
+    border: none;
+}
+.content-title.search input {
+    width: 400px;
+    line-height: 38px;
+    border: 2px solid #000;
+    vertical-align: middle;
+    font-size: 18px;
+    text-indent: 10px;
+}
+.content-title.search img {
+    display: inline-block;
+    margin-left: -2px;
+    width: 40px; height: 40px;
+    border: 2px solid #000;
+    vertical-align: middle;
+    cursor: pointer;
+}
+.search-form .search-menu {
+    margin: 40px 0 20px;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 20px;
+}
+.search-form ul {
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #ccc;
+}
+.search-form ul:last-child {
+    border-bottom: none;
+}
+.search-form li {
+    margin-bottom: 20px;
+}
+.search-form li:last-child {
+    margin-bottom: 0;
+}
+.search-form li p {
+    margin-bottom: 10px;
+    line-height: 18px;
+}
+.search-form li .search-title {
+    font-weight: bold;
+}
+.search-form li .search-gall {
+    display: inline-block;
+    margin-right: 10px;
+    text-decoration: underline;
+}
+.search-form li .search-day {
+    display: inline-block;
+}
+
+
+/* ---------- 글작성 ---------- */
+.write-title {
+	margin: 20px 0;
+}
+.write-title p{
+	display: inline-block;
+	padding: 0 10px 0 30px;
+}
+.write-title-text {
+	width: 615px;
+}
+.write-button {
+	margin-top: 20px;
+	text-align: right;
+}
+
+
+
+
+
+
+/* ---------- 헤더 ---------- */
